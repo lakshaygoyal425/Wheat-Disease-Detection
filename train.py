@@ -88,13 +88,13 @@ H = moodel.fit(
     steps_per_epoch=len(trainX) // 64,
     validation_data=valAug.flow(testX, testY),
     validation_steps=len(testX) // 64,
-    epochs=15)
+    epochs=50)
 
 predictions = moodel.predict(testX, batch_size=64)
 print(classification_report(testY.argmax(axis=1),
                             predictions.argmax(axis=1), target_names=lb.classes_))
 
-N = 15
+N = 50
 plt.plot(np.arange(0, N), H.history['accuracy'], label="Training Accuracy")
 plt.plot(np.arange(0, N), H.history['val_accuracy'], label="Test Accuracy")
 plt.title('VGG16 Model Train vs Test Accuracy')
