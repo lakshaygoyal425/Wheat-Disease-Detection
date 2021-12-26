@@ -7,9 +7,9 @@ from collections import deque
 import pickle
 
 # construct the argument parse and parse the arguments
-model_path = r"E:\Wheat Disease Detection\activity.model"
-input = r"E:\Wheat Disease Detection\Dataset\Leaf Rust\00161.jfif"
-label = r"E:\Wheat Disease Detection\lb.pickle"
+model_path = r"activity.model"
+input = r"161.jfif"
+label = r"lb.pickle"
 
 moodel = load_model(model_path)
 lb = pickle.loads(open("label", "rb").read())
