@@ -19,8 +19,8 @@ import os
 import pickle
 from keras.models import Model
 
-dataset = r"E:\Wheat Disease Detection\Dataset"
-label = r"E:\Wheat Disease Detection\lb.pickle"
+dataset = "Dataset"
+label = "lb.pickle"
 
 LABELS = set(["Fusarium Head Blight", "Healthy Wheat", "Leaf Rust", "Tan Spot"])
 
@@ -102,7 +102,7 @@ plt.ylabel('Accuracy')
 plt.xlabel('Epoch')
 plt.legend(loc='lower right')
 plt.show()
-plt.savefig(r"E:\Wheat Disease Detection\acc_plot.png")
+plt.savefig("acc_plot.png")
 
 plt.plot(H.history['loss'], label="Training Loss")
 plt.plot(H.history['val_loss'], label="Test Loss")
@@ -111,10 +111,10 @@ plt.ylabel('Loss')
 plt.xlabel('Epoch')
 plt.legend(loc='upper right')
 plt.show()
-plt.savefig(r"E:\Wheat Disease Detection\loss_plot.png")
+plt.savefig("loss_plot.png")
 
 # save the model to disk
-moodel.save("E:\Wheat Disease Detection\gg16_1001.h5")
+moodel.save("model.h5")
 
 f = open("label", "wb")
 f.write(pickle.dumps(lb))
