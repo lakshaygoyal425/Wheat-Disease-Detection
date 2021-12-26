@@ -7,7 +7,7 @@ from collections import deque
 import pickle
 
 # construct the argument parse and parse the arguments
-model_path = "activity.model"
+model_path = "model.h5"
 input = "leaf.jfif"
 label = "lb.pickle"
 
