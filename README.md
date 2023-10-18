@@ -13,7 +13,7 @@ Task is to detect various wheat diseases using various Deep Learning Models like
 
 ## :file_folder: Dataset
 The dataset used is Large Wheat Disease Classification Dataset (LWDCD2020) 
-[LINK for Dataset]([https://drive.google.com/drive/folders/1uO_yQBf4qZ7qH3U_P1DGHnFer1b9x3_d?usp=sharing](https://drive.google.com/drive/folders/1OHKtwD1UrdmhqxrpQEeF_X_pqKotxRGD))
+[LINK for Dataset](https://drive.google.com/drive/folders/1uO_yQBf4qZ7qH3U_P1DGHnFer1b9x3_d?usp=sharing](https://drive.google.com/drive/folders/1OHKtwD1UrdmhqxrpQEeF_X_pqKotxRGD))
 
 ![alt-text](https://github.com/lakshaygoyal425/Wheat-Disease-Detection/blob/main/Screenshot%20(61).png)
 
